@@ -1,0 +1,70 @@
+body {
+    background-color: #141414; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #141414; /* Fondo oscuro para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+/* Estilo de los campos de selección y área de texto */
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #2ecc71; /* Borde verde */
+    border-radius: 4px;
+    background-color: #212121; /* Fondo oscuro para los campos de entrada */
+    color: #ffffff; /* Texto blanco */
+    appearance: none; /* Elimina la apariencia predeterminada del sistema para el campo select */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+    -moz-appearance: none; /* Para navegadores basados en Gecko como Firefox */
+}
+
+/* Estilo específico para WebKit (Chrome, Safari) */
+select::-webkit-select-placeholder {
+    color: #ccc; /* Color del texto de marcador de posición */
+}
+
+/* Estilo específico para Firefox */
+select:-moz-placeholder {
+    color: #ccc; /* Color del texto de marcador de posición */
+}
+
+/* Estilo específico para todos los demás navegadores */
+select::-ms-expand {
+    display: none; /* Oculta la flecha desplegable en IE/Edge */
+}
+
+
+
+/* Estilo del botón de envío */
+button {
+    background-color: #2ecc71; /* Verde */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #27ae60; /* Verde más oscuro al pasar el ratón */
+}
