@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="STYLES/styles-inicio.css">
+
+  <title>Marival Armony | Inicio</title>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="titulo">
+      <h1>Bienvenido a Marival Armony</h1>
+    </div>
+    <div class="texto">
+      <p>El Marival Armony es un complejo turístico de lujo ubicado en Bahía de Banderas, México. Ofrece una amplia gama de servicios y comodidades, que incluyen habitaciones y suites de lujo, restaurantes gourmet, piscinas infinitas, spa y mucho más.</p>
+      <p>¿Ha visitado Marival Armony antes? ¿Qué le pareció su experiencia?</p>
+    </div>
+    <div class="boton">
+        <a href="encuesta.html">
+          <button>Iniciar Encuesta</button>
+        </a>
+        <a href="survey.html">
+          <button>Survey</button>
+        </a>
+      </div>
+  
+    <script>
+        // Función para cambiar la imagen de fondo cada segundo
+        function cambiarImagenDeFondoCadaSegundo() {
+          var imagenesDeFondo = [
+            'url("images/1.jpg")',
+            'url("images/2.png")',
+            'url("ruta/a/imagen3.jpg")',
+            // Añade más rutas de imágenes según sea necesario
+          ];
+    
+          var indiceActual = 0;
+    
+          setInterval(function () {
+            // Cambiar la imagen de fondo cada segundo
+            document.body.style.backgroundImage = imagenesDeFondo[indiceActual];
+    
+            // Incrementar el índice (volver a cero si alcanza el final del array)
+            indiceActual = (indiceActual + 1) % imagenesDeFondo.length;
+          }, 5000); // 1000 milisegundos = 1 segundo
+        }
+    
+        // Llamar a la función cuando la página carga
+        window.onload = cambiarImagenDeFondoCadaSegundo;
+      </script>
+    
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/STYLES/styles.css">
+  <title>Formulario de revisión de hotel</title>
+</head>
+<body>
+  <h1>Formulario de revisión de hotel</h1>
+
+  <form action="/enviar" method="post">
+    <div class="pregunta">
+      <label for="experiencia">¿Cómo calificarías tu experiencia general en nuestro hotel?</label>
+      <input type="number" name="experiencia" id="experiencia" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="servicio">¿Estuviste satisfecho con la calidad del servicio recibido durante tu estancia?</label>
+      <input type="number" name="servicio" id="servicio" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="limpieza">¿Cómo evaluarías la limpieza y comodidad de tu habitación?</label>
+      <input type="number" name="limpieza" id="limpieza" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="opciones_gastronomicas">¿Estuviste conforme con las opciones gastronómicas disponibles en el hotel?</label>
+      <input type="number" name="opciones_gastronomicas" id="opciones_gastronomicas" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="atencion_personal">¿Cómo calificarías la atención recibida por nuestro personal?</label>
+      <input type="number" name="atencion_personal" id="atencion_personal" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="instalaciones">¿Utilizaste las instalaciones recreativas o de bienestar? En caso afirmativo, ¿cómo las valoras?</label>
+      <input type="number" name="instalaciones" id="instalaciones" min="0" max="5">
+    </div>
+
+    <div class="pregunta">
+      <label for="mejoras">¿Hubo algún aspecto de tu estancia que crees que podríamos mejorar?</label>
+      <textarea name="mejoras" id="mejoras" rows="5" cols="50"></textarea>
+    </div>
+
+    <div class="pregunta">
+      <label for="recomendacion">¿Recomendarías nuestro hotel a familiares o amigos?</label>
+      <input type="checkbox" name="recomendacion" id="recomendacion">
+    </div>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

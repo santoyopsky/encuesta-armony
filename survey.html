@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLES/styles.css">
+    <title>Hotel Survey</title>
+</head>
+<body>
+    <form id="hotelForm" action="submit.php" method="post">
+        <label for="experience">How would you rate your overall experience at our hotel?</label>
+        <select name="experience" id="experience" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="cleanliness">How would you rate the cleanliness and comfort of your room?</label>
+        <select name="cleanliness" id="cleanliness" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="gastronomy">Were you satisfied with the available gastronomic options at the hotel?</label>
+        <select name="gastronomy" id="gastronomy" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="service">How would you rate the service quality during your stay?</label>
+        <select name="service" id="service" required>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="recreational_facilities">Did you use the recreational or wellness facilities? If yes, how would you rate them?</label>
+        <select name="recreational_facilities" id="recreational_facilities">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="improvements">Is there any aspect of your stay that you think we could improve?</label>
+        <textarea name="improvements" rows="4"></textarea>
+
+        <label for="recommendation">Would you recommend our hotel to family or friends?</label>
+        <select name="recommendation" id="recommendation" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

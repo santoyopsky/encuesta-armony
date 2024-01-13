@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLES/styles.css">
+    <title>Encuesta de Hotel</title>
+</head>
+<body>
+    <form id="hotelForm" action="submit.php" method="post">
+        <label for="experiencia">¿Cómo calificarías tu experiencia general en nuestro hotel?</label>
+        <select name="experiencia" id="experiencia" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+
+        <label for="servicio">¿Estuviste satisfecho con la calidad del servicio recibido durante tu estancia?</label>
+        <select name="servicio" id="servicio" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+    
+        <label for="limpieza">¿Cómo evaluarías la limpieza y comodidad de tu habitación?</label>
+        <select name="limpieza" id="limpieza" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+    
+        <label for="gastronomia">¿Estuviste conforme con las opciones gastronómicas disponibles en el hotel?</label>
+        <select name="gastronomia" id="gastronomia" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+    
+        <label for="atencion">¿Cómo calificarías la atención recibida por nuestro personal?</label>
+        <select name="atencion" id="atencion" required>
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+    
+        <label for="instalaciones">¿Utilizaste las instalaciones recreativas o de bienestar? En caso afirmativo, ¿cómo las valoras?</label>
+        <select name="instalaciones" id="instalaciones">
+            <option value="excelente">Excelente</option>
+            <option value="bueno">Bueno</option>
+            <option value="regular">Regular</option>
+            <option value="malo">Malo</option>
+        </select>
+    
+        <label for="mejoras">¿Hubo algún aspecto de tu estancia que crees que podríamos mejorar?</label>
+        <textarea name="mejoras" rows="4"></textarea>
+    
+        <label for="recomendacion">¿Recomendarías nuestro hotel a familiares o amigos?</label>
+        <select name="recomendacion" id="recomendacion" required>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <!-- Agrega las demás preguntas aquí -->
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
